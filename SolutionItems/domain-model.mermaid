@@ -1,0 +1,34 @@
+classDiagram
+    
+    note "Types to define:
+        * GroupId of guid
+        * GroupName - not empty string
+        
+        * PersonId of guid
+        * FirstName - not empty string
+        * LastName - not empty string 
+        
+        * AccountId of guid
+        * AccontName - not empty string
+    "
+    
+    namespace Domain {
+        class Group {
+            GroupId Id
+            GroupName Name
+        }
+
+        class Person {
+            PersonId Id
+            FirstName FirstName
+            LastName LastName
+        }
+
+        class Account {
+            AccountId Id
+            AccountName Name
+        }
+    }
+    
+    Group "*" --> "*" Person
+    Person "1" --> "*" Account
