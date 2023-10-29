@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{40052253-86E5-492C-A205-02B982E2AB9A}"
 	ProjectSection(SolutionItems) = preProject
 		SolutionItems\domain-model.mermaid = SolutionItems\domain-model.mermaid
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7B7AE3CF-0638-4509-95EC-27308EC1927B}"
