@@ -10,6 +10,8 @@ classDiagram
         
         * AccountId of guid
         * AccontName - not empty string
+        
+        * Amount - positive number, 2 decimal digits
     "
     
     namespace Domain {
@@ -27,8 +29,17 @@ classDiagram
         class Account {
             AccountId Id
             AccountName Name
+            AccountType Type
+        }
+        
+        class Request {
+           Person Requester
+           Person Requestee
+           AccountType PreferedType
+           Amount Amount
         }
     }
     
     Group "*" --> "*" Person
     Person "1" --> "*" Account
+    
