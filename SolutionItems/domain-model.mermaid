@@ -1,6 +1,6 @@
 classDiagram
     
-    note "Types to define:
+    note "Types to define
         * GroupId of guid
         * GroupName - not empty string
         
@@ -12,6 +12,47 @@ classDiagram
         * AccontName - not empty string
         
         * Amount - positive number, 2 decimal digits
+    "
+    
+    note "Domain Language
+        Person
+        
+        Group
+        Group Administrator
+        Group Member
+        
+        InviteToGroup
+        AcceptGroupInvite
+        RejectGroupInvite
+        
+        PaymentOption
+        
+        Request
+        AcceptRequest
+        RejectRequest
+    "
+    
+    note "Constraints
+        * Every Group has 1 Administrator
+        * Person that created the Group becomes its first Member and Administrator
+        * Person can be a Member/Administrator in number of Groups
+        
+        * Only Administrator can send Invite to a Group
+        * Invite can be Accepted or Rejected
+        
+        * Any Person can create a Request to any other Person in Group
+        * Request specifies Primary and optional list of Secondary PaymentOptions
+          out of Person's defined PaymentOptions
+          
+        * If Requestee has no PaymentOption defined that matches
+          Primary or Secondary Options defined in Request,
+          Request will be automatically Rejected
+          
+        * Requestee can Accept or Reject a Request.
+          To Reject Request a Reason should be given 
+          
+        * If Requestee has more than one PaymentOption that matches PrimaryOption,
+          Requestee should pick one to Accept Request
     "
     
     namespace Domain {

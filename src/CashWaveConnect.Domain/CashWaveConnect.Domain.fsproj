@@ -6,8 +6,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="NonEmptyString.fs" />
-      <Compile Include="Email.fs" />
+      <Compile Include="Helpers\NonEmptyString.fs" />
+      <Compile Include="Helpers\Email.fs" />
       <Compile Include="Group.fs" />
       <Compile Include="Person.fs" />
       <Compile Include="Account.fs" />

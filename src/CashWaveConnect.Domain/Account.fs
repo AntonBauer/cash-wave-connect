@@ -1,6 +1,6 @@
 module CashWaveConnect.Domain.Account
 
-open CashWaveConnect.Domain.Email
+open CashWaveConnect.Domain.Helpers.Email
 
 type Iban = Iban of string
 

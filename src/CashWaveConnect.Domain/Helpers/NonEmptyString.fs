@@ -1,4 +1,4 @@
-module CashWaveConnect.Domain.NonEmptyString
+module CashWaveConnect.Domain.Helpers.NonEmptyString
 
 type NonEmptyString = NonEmptyString of string
 

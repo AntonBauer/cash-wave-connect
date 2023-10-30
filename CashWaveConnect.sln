@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 	ProjectSection(SolutionItems) = preProject
 		SolutionItems\domain-model.mermaid = SolutionItems\domain-model.mermaid
 		README.md = README.md
+		SolutionItems\domain-events.mermaid = SolutionItems\domain-events.mermaid
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7B7AE3CF-0638-4509-95EC-27308EC1927B}"

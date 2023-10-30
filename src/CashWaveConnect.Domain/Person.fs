@@ -1,6 +1,7 @@
 module CashWaveConnect.Domain.Person
 
-open CashWaveConnect.Domain.NonEmptyString
+open CashWaveConnect.Domain.Helpers.NonEmptyString
+
 
 type PersonName = {
  FirstName: NonEmptyString
